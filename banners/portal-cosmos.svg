@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 220" width="100%">
+  <!-- Flare Principal 1 -->
+  <g transform="translate(400, 110)">
+    <polygon points="0,-15 2,-2 15,0 2,2 0,15 -2,2 -15,0 -2,-2" fill="#FFFFFF">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="2s" repeatCount="indefinite"/>
+    </polygon>
+    <circle cx="0" cy="0" r="4" fill="#FFC55A" fill-opacity="0.7"/>
+  </g>
+
+  <!-- Flare 2 -->
+  <g transform="translate(250, 70)">
+    <polygon points="0,-10 1.5,-1.5 10,0 1.5,1.5 0,10 -1.5,1.5 -10,0 -1.5,-1.5" fill="#FFFFFF">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2.5s" repeatCount="indefinite"/>
+    </polygon>
+  </g>
+
+  <!-- Flare 3 -->
+  <g transform="translate(580, 150)">
+    <polygon points="0,-12 2,-2 12,0 2,2 0,12 -2,2 -12,0 -2,-2" fill="#FFC55A">
+      <animate attributeName="opacity" values="0.1;0.9;0.1" dur="1.8s" repeatCount="indefinite"/>
+    </polygon>
+  </g>
+
+  <!-- Constelação de Micro-Pontos Refrativos (Poeira de Diamante) -->
+  <g fill="#FFFFFF">
+    <circle cx="120" cy="50" r="1.5"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.1s" repeatCount="indefinite"/></circle>
+    <circle cx="180" cy="160" r="1"><animate attributeName="opacity" values="1;0.1;1" dur="1.7s" repeatCount="indefinite"/></circle>
+    <circle cx="320" cy="180" r="2" fill="#FFC55A"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.2s" repeatCount="indefinite"/></circle>
+    <circle cx="360" cy="40" r="1.2"><animate attributeName="opacity" values="0.8;0.2;0.8" dur="1.4s" repeatCount="indefinite"/></circle>
+    <circle cx="480" cy="60" r="1"><animate attributeName="opacity" values="0.1;1;0.1" dur="1.9s" repeatCount="indefinite"/></circle>
+    <circle cx="520" cy="130" r="1.8"><animate attributeName="opacity" values="0.9;0.3;0.9" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="650" cy="80" r="1.2" fill="#FFC55A"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.5s" repeatCount="indefinite"/></circle>
+    <circle cx="710" cy="140" r="1.5"><animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- Linhas Abstratas de Tensão Magnética -->
+  <g stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="0.5" fill="none">
+    <path d="M 400,110 L 250,70" />
+    <path d="M 400,110 L 580,150" />
+    <path d="M 250,70 Q 400,30 580,150" stroke-dasharray="2,4" stroke-opacity="0.15" />
+  </g>
+</svg>
