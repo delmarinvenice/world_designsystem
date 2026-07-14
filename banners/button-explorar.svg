@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60" width="280">
+  <defs>
+    <linearGradient id="btn-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255, 255, 255, 0.08)" />
+      <stop offset="100%" stop-color="rgba(255, 197, 90, 0.15)" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Borda de Cristal e Fundo Refrativo -->
+  <rect x="1.5" y="1.5" width="277" height="57" rx="28.5" fill="url(#btn-grad)" stroke="#FFC55A" stroke-width="1.5">
+    <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Brilho Interno Pulsante -->
+  <rect x="4" y="4" width="272" height="52" rx="26" fill="none" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1" />
+
+  <!-- Texto Tipográfico Premium -->
+  <text x="50%" y="54%" font-family="system-ui, sans-serif" font-weight="800" font-size="11" fill="#FFFFFF" letter-spacing="3" text-anchor="middle" dominant-baseline="middle">
+    EXPLORAR DIREÇÕES
+  </text>
+</svg>
