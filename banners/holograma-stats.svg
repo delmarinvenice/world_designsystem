@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 180" width="100%">
+  <defs>
+    <linearGradient id="intense-lens" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFB326" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#FFC55A" stop-opacity="0.6"/>
+      <stop offset="48%" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset="52%" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset="75%" stop-color="#FFC55A" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#FFB326" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <line x1="40" y1="90" x2="760" y2="90" stroke="url(#intense-lens)" stroke-width="2.5" />
+  <line x1="40" y1="96" x2="760" y2="96" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0.4" stroke-dasharray="4,4" />
+
+  <g stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="1.5">
+    <line x1="200" y1="82" x2="200" y2="98" />
+    <line x1="300" y1="85" x2="300" y2="95" />
+    <line x1="500" y1="85" x2="500" y2="95" />
+    <line x1="600" y1="82" x2="600" y2="98" />
+  </g>
+
+  <ellipse cx="400" cy="90" rx="290" ry="40" fill="none" stroke="url(#intense-lens)" stroke-width="2.5">
+    <animate attributeName="ry" values="40;55;40" dur="3s" repeatCount="indefinite" />
+    <animate attributeName="rx" values="290;295;290" dur="3s" repeatCount="indefinite" />
+  </ellipse>
+  
+  <ellipse cx="400" cy="90" rx="280" ry="34" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0.4" stroke-dasharray="6,10">
+    <animate attributeName="ry" values="34;20;34" dur="2.5s" repeatCount="indefinite" />
+  </ellipse>
+
+  <g transform="translate(100, 90)">
+    <polygon points="0,-20 3,-3 20,0 3,3 0,20 -3,3 -20,0 -3,-3" fill="#FFFFFF">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="1.2s" repeatCount="indefinite"/>
+    </polygon>
+    <circle cx="0" cy="0" r="6" fill="#FFC55A" fill-opacity="0.7"/>
+  </g>
+
+  <g transform="translate(700, 90)">
+    <polygon points="0,-20 3,-3 20,0 3,3 0,20 -3,3 -20,0 -3,-3" fill="#FFFFFF">
+      <animate attributeName="opacity" values="1;0.2;1" dur="1.5s" repeatCount="indefinite"/>
+    </polygon>
+    <circle cx="0" cy="0" r="6" fill="#FFFFFF" fill-opacity="0.6"/>
+  </g>
+
+  <g font-family="system-ui, sans-serif" font-weight="800" font-size="13" style="letter-spacing: 2px;">
+    <g transform="translate(180, 65)">
+      <animateTransform attributeName="transform" type="translate" values="180,65; 180,58; 180,65" dur="3s" repeatCount="indefinite"/>
+      <circle cx="0" cy="-4" r="4" fill="#FFC55A">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="1s" repeatCount="indefinite"/>
+      </circle>
+      <text x="14" y="0" fill="#FFFFFF">sys.resonance_active</text>
+    </g>
+    
+    <g transform="translate(440, 130)">
+      <animateTransform attributeName="transform" type="translate" values="440,130; 440,137; 440,130" dur="2.7s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#FFC55A">- perception_ratio::3:17</text>
+      <polygon points="265,-6 270,-2 265,2 260,-2" fill="#FFFFFF">
+        <animate attributeName="opacity" values="0.2;1;0.2" dur="0.8s" repeatCount="indefinite"/>
+      </polygon>
+    </g>
+  </g>
+</svg>
