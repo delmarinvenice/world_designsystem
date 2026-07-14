@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="portal">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Quartz Portal — Direções Estéticas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TELA 1: A SUPERFÍCIE (BOAS-VINDAS VIVA) -->
+  <section id="screen-welcome" class="screen active">
+    
+    <!-- ECOSSISTEMA VIVO DE FUNDO (A Superfície de Ressonância) -->
+    <div class="resonance-field">
+      <div class="glow-core"></div>
+      <!-- Anéis de luz dinâmicos pulsantes -->
+      <span class="light-ring r1"></span>
+      <span class="light-ring r2"></span>
+      <span class="light-ring r3"></span>
+      <!-- Pequenas estrelas refrativas pulsantes -->
+      <span class="stellar-flash s1"></span>
+      <span class="stellar-flash s2"></span>
+    </div>
+
+    <!-- Interface HUD (Heads-Up Display) de Micro-Dados -->
+    <div class="hud-interface">
+      <div class="experience-label top-left">
+        Experiência conceitual
+      </div>
+      <div class="version-label bottom-right">
+        Versão 01
+      </div>
+    </div>
+
+    <!-- NÚCLEO CENTRAL DE VIDRO LÍQUIDO E LUZ -->
+    <div class="portal-core-container">
+      <video autoplay loop muted playsinline class="core-video">
+        <source src="./banners/nucleo-liquido.webm" type="video/webm">
+      </video>
+    </div>
+
+    <!-- CONTEÚDO E BOTÃO (Ancorados na Superfície Reativa) -->
+    <div class="content-anchor">
+      <div class="text-content">
+        <h1 class="portal-title">World design system.</h1>
+        <p class="portal-subtitle">Traduzimos sua visão em três direções estéticas distintas. Cada uma representa uma forma diferente de posicionar valor, presença e identidade.</p>
+      </div>
+
+      <div class="interactive-trigger" onclick="navigateTo('screen-terms')">
+        <!-- O Botão de Água Interativo -->
+        <div class="water-button explorer-button">
+          <span class="button-glow"></span>
+          Explorar direções
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- TELA 2: TERMOS & CALIBRAÇÃO (A CONEXÃO) -->
+  <section id="screen-terms" class="screen">
+    <div class="glass-container wider">
+      <div class="hud-frame">
+        <span class="corner-tick tl"></span>
+        <span class="corner-tick tr"></span>
+        <span class="corner-tick bl"></span>
+        <span class="corner-tick br"></span>
+        
+        <h2 class="hud-title">PROTOCOLO DE RESSONÂNCIA</h2>
+        <div class="hud-telemetry">sys.resonance_active // init</div>
+        
+        <div class="terms-content">
+          <p>Seja bem-vindo à interface de refinamento conceitual. Este aplicativo interativo foi projetado para materializar visões intangíveis de design, arquitetura e luxo invisível.</p>
+          <p>Ao avançar, você concorda em desarmar percepções convencionais e interagir com três direções estéticas criadas especificamente para o seu ecossistema corporativo.</p>
+          <p>Ajuste a luminosidade do seu monitor para que as transições de contraste, sombras refratadas e texturas de vidro se revelem com precisão matemática.</p>
+        </div>
+
+        <div class="calibration-slider-container">
+          <label for="calibrator">CALIBRAÇÃO DE CONTRASTE DA TELA</label>
+          <input type="range" id="calibrator" min="1" max="100" value="50" oninput="adjustGlow(this.value)">
+        </div>
+
+        <button class="action-button" onclick="navigateTo('screen-avatar-selection')">
+          Aceitar e Sintonizar
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- TELA 3: SELEÇÃO DE DIREÇÃO (O SAGUÃO DOS AVATARES) -->
+  <section id="screen-avatar-selection" class="screen">
+    <div class="selection-grid">
+      <div class="selection-header">
+        <h2>SINTONIZE UMA DIREÇÃO</h2>
+        <p>Escolha o avatar que definirá a atmosfera de exibição do protótipo</p>
+      </div>
+      
+      <div class="cards-container">
+        <!-- Direção 1 -->
+        <div class="aesthetic-card" onclick="selectTheme('classic-heritage')">
+          <div class="card-glow"></div>
+          <div class="card-inner">
+            <span class="card-number">01</span>
+            <h3>Classic Heritage</h3>
+            <p>O luxo do tempo, da simetria e do legado eterno.</p>
+          </div>
+        </div>
+
+        <!-- Direção 2 -->
+        <div class="aesthetic-card" onclick="selectTheme('biophilic-tech')">
+          <div class="card-glow"></div>
+          <div class="card-inner">
+            <span class="card-number">02</span>
+            <h3>Biophilic Tech</h3>
+            <p>A física dos fluidos, as curvas e a natureza cristalina.</p>
+          </div>
+        </div>
+
+        <!-- Direção 3 -->
+        <div class="aesthetic-card" onclick="selectTheme('architectural-silence')">
+          <div class="card-glow"></div>
+          <div class="card-inner">
+            <span class="card-number">03</span>
+            <h3>Architectural Silence</h3>
+            <p>O luxo do vazio, o minimalismo extremo e a precisão linear.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
