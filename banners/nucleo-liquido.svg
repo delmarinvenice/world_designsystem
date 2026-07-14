@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="gold-core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="30%" stop-color="#FFE4A0" />
+      <stop offset="70%" stop-color="#FFC55A" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#FF9F1C" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="glass-sheen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.4" />
+      <stop offset="30%" stop-color="#FFFFFF" stop-opacity="0.05" />
+      <stop offset="70%" stop-color="#FFC55A" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.25" />
+    </linearGradient>
+
+    <filter id="glow-heavy" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="25" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <circle cx="200" cy="200" r="110" fill="url(#gold-core)" filter="url(#glow-heavy)">
+    <animate attributeName="r" values="100;125;100" dur="6s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.6;0.9;0.6" dur="6s" repeatCount="indefinite" />
+  </circle>
+
+  <path d="M200,120 Q270,110 280,200 T200,280 Q120,270 120,200 T200,120 Z" fill="none" stroke="#FFC55A" stroke-width="1.5" stroke-opacity="0.3">
+    <animate attributeName="d" 
+             values="M200,120 Q270,110 280,200 T200,280 Q120,270 120,200 T200,120 Z;
+                     M200,130 Q250,140 270,200 T200,270 Q150,240 130,200 T200,130 Z;
+                     M200,120 Q270,110 280,200 T200,280 Q120,270 120,200 T200,120 Z" 
+             dur="8s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="rotate" from="0 200 200" to="360 200 200" dur="20s" repeatCount="indefinite" />
+  </path>
+
+  <path d="M200,100 Q290,90 300,200 T200,300 Q100,290 100,200 T200,100 Z" fill="url(#glass-sheen)" stroke="rgba(255, 255, 255, 0.25)" stroke-width="1">
+    <animate attributeName="d" 
+             values="M200,100 Q290,90 300,200 T200,300 Q100,290 100,200 T200,100 Z;
+                     M200,105 Q275,115 295,200 T200,295 Q125,265 105,200 T200,105 Z;
+                     M200,95 Q305,100 305,200 T200,305 Q95,300 95,200 T200,95 Z;
+                     M200,100 Q290,90 300,200 T200,300 Q100,290 100,200 T200,100 Z" 
+             dur="10s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="rotate" from="360 200 200" to="0 200 200" dur="25s" repeatCount="indefinite" />
+  </path>
+
+  <g fill="#FFFFFF">
+    <circle cx="170" cy="150" r="2.5">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite" />
+      <animateTransform attributeName="transform" type="translate" values="0,0; 5,-10; 0,0" dur="6s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="240" cy="230" r="1.5" fill="#FFC55A">
+      <animate attributeName="opacity" values="0.9;0.1;0.9" dur="4s" repeatCount="indefinite" />
+      <animateTransform attributeName="transform" type="translate" values="0,0; -8,8; 0,0" dur="8s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <ellipse cx="200" cy="200" rx="120" ry="120" fill="none" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="1" stroke-dasharray="3,15">
+    <animateTransform attributeName="transform" type="rotate" from="0 200 200" to="-360 200 200" dur="40s" repeatCount="indefinite" />
+  </ellipse>
+</svg>
